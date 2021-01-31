@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parallax Effects</title>
+  </head>
+  <body>
+    <div class="banner">
+      <h2 id="text">Heaven</h2>
+      <div class="clouds">
+        <img src="cloud1.png" style="--i: 1" />
+        <img src="cloud2.png" style="--i: 2" />
+        <img src="cloud3.png" style="--i: 3" />
+        <img src="cloud4.png" style="--i: 4" />
+        <img src="cloud5.png" style="--i: 5" />
+        <img src="cloud1.png" style="--i: 10" />
+        <img src="cloud2.png" style="--i: 9" />
+        <img src="cloud3.png" style="--i: 8" />
+        <img src="cloud4.png" style="--i: 7" />
+        <img src="cloud5.png" style="--i: 6" />
+      </div>
+    </div>
+    <section>
+      <h2>Realistic Cloud Banner Parallax Effects</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum
+        voluptates explicabo autem ipsam officiis suscipit placeat illo et,
+        error, odio iste recusandae aperiam. Quas laudantium aliquid temporibus
+        quae maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dolore error pariatur possimus numquam cum explicabo necessitatibus
+        quibusdam quos nemo esse, tenetur adipisci voluptates, saepe,
+        repudiandae harum inventore laborum consequuntur quas. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Ex velit repellat sit voluptates
+        alias debitis eius maxime cumque. Non saepe ab tempore ipsum soluta
+        itaque rerum est possimus alias enim? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Corporis minus laboriosam iste veritatis
+        sed laborum sequi beatae nisi culpa deleniti ipsa, adipisci omnis
+        doloribus hic labore eveniet magni libero quae. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Inventore sint maxime molestias
+        voluptatum aperiam, eaque ea praesentium debitis reprehenderit est non
+        fugit aliquid voluptate deleniti, amet a esse quam dignissimos? Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Ab quo accusantium
+        eius. Voluptates sapiente officiis ipsa at minus optio? Cum corrupti
+        recusandae ea dolore reiciendis velit, iure odit animi hic. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Tenetur ipsum harum vitae
+        perferendis? Temporibus dolorum rem quas quod hic? Expedita nemo facere
+        tempora, cupiditate accusamus unde consequuntur totam neque porro?
+      </p>
+    </section>
+    <script>
+      let text = document.getElementById("text");
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        text.style.marginBottom = value * 2 + "px";
+      });
+    </script>
+  </body>
+</html>
